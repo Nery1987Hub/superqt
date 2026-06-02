@@ -1,0 +1,16 @@
+header {
+    border-bottom: 2px solid #e9ecef;
+    padding: 15px 0;
+    font-family: arial;
+    background-color: #d559ff;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a { color: #ffcc00; }
