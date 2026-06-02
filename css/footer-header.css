@@ -1,12 +1,12 @@
 header {
-    border-bottom: 2px solid #e9ecef;
+    border-bottom: 2px solid #ffaff4;
     padding: 15px 0;
     font-family: arial;
     background-color: #d559ff;
 }
 
 footer {
-    background-color: #1a1a1a;
+    background-color: #d559ff;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
