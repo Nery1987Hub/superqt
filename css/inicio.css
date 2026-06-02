@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    font-family: arial;
+    background-color: #d559ff;
+}
+
+body {
+    font-family: MV Boli, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a; /* Contraste adequado sobre fundo claro */
+    background-color: #ffec59;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
