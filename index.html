@@ -21,7 +21,26 @@
             </div>
             <nav aria-label="Navegação Principal">
                 <ul class="menu">
-                    <li>Recusros</li>
+                    <li class="dropdown-item">
+                        <buttonclass="dropdown-botao" aria-haspopup="true" aria-expanded="false" id="btn-acessibilidade">
+                            Acessibilidade
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="btn-acessibilidade" role="menu">
+                            <li role="none">
+                                <button onclick="mudarFonte('diminuir')" role="menuitem" class="btn-fonte">-A</button>
+                            </li>
+                        </ul>
+                        <ul class="dropdown-menu" aria-labelledby="btn-acessibilidade" role="menu">
+                            <li role="none">
+                                <button onclick="mudarFonte('normal')" role="menuitem" class="btn-fonte">A</button>
+                            </li>
+                        </ul>
+                        <ul class="dropdown-menu" aria-labelledby="btn-acessibilidade" role="menu">
+                            <li role="none">
+                                <button onclick="mudarFonte('aumentar')" role="menuitem" class="btn-fonte">+A</button>
+                            </li>
+                        </ul>
+                    </li>
                     <li>Contatos</li>
                 </ul>
             </nav>
