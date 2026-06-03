@@ -1,3 +1,10 @@
+.logo-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 header {
     border-bottom: 2px solid #ffaff4;
     padding: 15px 0;
@@ -13,4 +20,18 @@ footer {
     margin-top: 40px;
 }
 
-footer a { color: #ffcc00; }
+footer a { 
+    color: #ffd014; 
+}
+
+footer a:hover, footer a:focus {
+    color: #6cdfff;
+    outline: 3px solid #ffd014;
+}
+
+@media (max-width: 600px) {
+    .logo-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
