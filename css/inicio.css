@@ -9,6 +9,23 @@
 }
 .link-pular:focus { top: 0; }
 
+.jogar {
+    display: inline-block;
+    background-color: #d559ff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.jogar:hover, .jogar:focus {
+    background-color: #b138d9;
+    outline: 3px solid #ffb300;
+    color: black;
+}
+
 .hero {
     padding: 60px 0;
     text-align: justify;
