@@ -6,14 +6,14 @@
 }
 
 header {
-    border-bottom: 2px solid #ffaff4;
+    border-bottom: 2px solid --cor-borda;
     padding: 15px 0;
     font-family: arial;
-    background-color: #d559ff;
+    background-color: var(--cor-fundoroxo);
 }
 
 footer {
-    background-color: #d559ff;
+    background-color: var(--cor-fundoroxo);
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
@@ -25,8 +25,8 @@ footer a {
 }
 
 footer a:hover, footer a:focus {
-    color: #6cdfff;
-    outline: 3px solid #ffd014;
+    color: var(--cor-linkapp-foco);
+    outline: 3px solid var(--cor-borda-linkapp-foco);
 }
 
 @media (max-width: 600px) {

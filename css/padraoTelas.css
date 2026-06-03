@@ -1,11 +1,19 @@
 :root {
     --cor-fundo: #ffec59;
     --cor-texto: #1a1a1a;
+    --cor-fundoroxo: #d559ff;
+    --cor-borda: #ffaff4;
+    --cor-linkapp-foco: #6cdfff;
+    --cor-borda-linkapp-foco: #dfb200;
 }
 
 [data-theme = "dark"] {
-    --cor-fundo: #8a6708;
+    --cor-fundo: #a87b00;
     --cor-texto: #fbffc5;
+    --cor-fundoroxo: #591270;
+    --cor-borda: #963288;
+    --cor-linkapp-foco: #219fc2;
+    --cor-borda-linkapp-foco: #cfa90e;
 }
 
 * {

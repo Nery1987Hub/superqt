@@ -10,14 +10,16 @@
 .link-pular:focus { top: 0; }
 
 .jogar {
-    display: inline-block;
-    background-color: #d559ff;
+    display: block;
+    background-color: var(--cor-fundoroxo);
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 6px;
     margin-top: 20px;
     font-weight: bold;
     color: white;
+    width: 100;
+    justify-content: center;
 }
 
 .jogar:hover, .jogar:focus {
