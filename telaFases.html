@@ -19,7 +19,28 @@
             </div>
             <nav aria-label="Navegação Principal">
                 <ul class="menu">
-                    <li>Recusros</li>
+                    <li class="dropdown-item">
+                        <button class="dropdown-botao" aria-haspopup="true" aria-expanded="false" id="btn-acessibilidade">
+                            Acessibilidade
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="btn-acessibilidade" role="menu">
+                            <li role="none">
+                                <button onclick="alternarTema()" role="menuitem" class="btn-fonte" id="btn-tema">
+                                    Modo Escuro 🌙
+                                </button>
+                            </li>
+                            <!-- <li role="separator" style="border-top: 1px solid #ccc; margin: 5px 0;"></li>
+                            <li role="none">
+                                <button onclick="mudarFonte('diminuir')" role="menuitem" class="btn-fonte">-A</button>
+                            </li>
+                            <li role="none">
+                                <button onclick="mudarFonte('normal')" role="menuitem" class="btn-fonte">A</button>
+                            </li>
+                            <li role="none">
+                                <button onclick="mudarFonte('aumentar')" role="menuitem" class="btn-fonte">+A</button>
+                            </li>-->
+                        </ul>
+                    </li>
                     <li>Contatos</li>
                 </ul>
             </nav>
@@ -28,11 +49,11 @@
 
     <main>
         <section class="hero container">
-            <p><a href=""></a>Fase 1</p>
-            <p><a href=""></a>Fase 2</p>
-            <p><a href=""></a>Fase 3</p>
-            <p><a href=""></a>Fase 4</p>
-            <p><a href=""></a>Fase 5</p>
+            <a href="fases/pergunta1-fase1.html">Fase 1</a>
+            <p><a href="fases/pergunta1-fase2.html">Fase 2</a></p>
+            <p><a href="fases/pergunta1-fase3.html">Fase 3</a></p>
+            <p><a href="fases/pergunta1-fase4.html">Fase 4</a></p>
+            <p><a href="fases/pergunta1-fase5.html">Fase 5</a></p>
         </section>
     </main>
 
@@ -44,5 +65,7 @@
             </p>
         </div>
     </footer>
+
+    <script src="js/temaClaroEscuro.js"></script>
 </body>
 </html>
