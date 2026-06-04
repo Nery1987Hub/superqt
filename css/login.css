@@ -9,7 +9,7 @@ body
 
 .container-login
 {
-    background-color: mediumslateblue;
+    background-color: var(--cor-fundoroxo);
     max-width: 300px;
     width: 100%;
     padding: 2.5rem;
