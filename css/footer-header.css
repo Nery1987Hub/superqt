@@ -6,7 +6,7 @@
 }
 
 header {
-    border-bottom: 2px solid --cor-borda;
+    border-bottom: 2px solid var(--cor-borda);
     padding: 15px 0;
     font-family: arial;
     background-color: var(--cor-fundoroxo);

@@ -6,6 +6,9 @@
     --cor-linkapp-foco: #6cdfff;
     --cor-borda-linkapp-foco: #ffd427;
     --cor-focoJogar: #b138d9;
+    --cor-gameOver: #ec3615;
+    --cor-letra-botao: #ffdd44;
+    --cor-letra-botaofoco: #fdc91d;
 }
 
 [data-theme = "dark"] {
@@ -16,6 +19,8 @@
     --cor-linkapp-foco: #219fc2;
     --cor-borda-linkapp-foco: #bd9a0d;
     --cor-focoJogar: #521052;
+    --cor-gameOver: #cc1205;
+    --cor-letra-botao: #ffb300;
 }
 
 * {
