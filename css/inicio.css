@@ -23,9 +23,9 @@
 }
 
 .jogar:hover, .jogar:focus {
-    background-color: #b138d9;
+    background-color: var(--cor-focoJogar);
     outline: 3px solid #ffb300;
-    color: black;
+    color: #ffb300;
 }
 
 .hero {

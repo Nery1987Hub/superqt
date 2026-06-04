@@ -4,7 +4,8 @@
     --cor-fundoroxo: #d559ff;
     --cor-borda: #ffaff4;
     --cor-linkapp-foco: #6cdfff;
-    --cor-borda-linkapp-foco: #dfb200;
+    --cor-borda-linkapp-foco: #ffd427;
+    --cor-focoJogar: #b138d9;
 }
 
 [data-theme = "dark"] {
@@ -13,7 +14,8 @@
     --cor-fundoroxo: #591270;
     --cor-borda: #963288;
     --cor-linkapp-foco: #219fc2;
-    --cor-borda-linkapp-foco: #cfa90e;
+    --cor-borda-linkapp-foco: #bd9a0d;
+    --cor-focoJogar: #521052;
 }
 
 * {
