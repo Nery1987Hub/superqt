@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.gameOver {
+    display: flex;
+    background-color: var(--cor-gameOver);
+    padding: 12px 24px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: var(--cor-letra-botao);
+}
+
+.gameOver:hover, .gameOver:focus {
+    background-color: var(--cor-gameOver);
+    outline: 3px solid --cor-borda-linkapp-foco;
+    color: --cor-letra-botao;
+}
+
+.resposta {
+    display: flex;
+    padding: 12px 24px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.resposta:hover, .resposta:focus {
+    background-color: var(--cor-fundoroxo);
+    outline: 3px solid #ffb300;
+    color: var(--cor-letra-botaofoco);
+}
+
+footer {
+    flex-shrink: 0;
+}
