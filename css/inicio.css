@@ -9,6 +9,12 @@
 }
 .link-pular:focus { top: 0; }
 
+.centro-jogar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .jogar {
     display: block;
     background-color: var(--cor-fundoroxo);
