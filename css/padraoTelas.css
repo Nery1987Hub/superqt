@@ -1,5 +1,5 @@
 :root {
-    --cor-fundo: #ffec59;
+    --cor-fundo: #ffce58;
     --cor-texto: #1a1a1a;
     --cor-fundoroxo: #d559ff;
     --cor-borda: #ffaff4;
@@ -12,9 +12,9 @@
 }
 
 [data-theme = "dark"] {
-    --cor-fundo: #bd8a00;
+    --cor-fundo: #bd7800;
     --cor-texto: #fbffc5;
-    --cor-fundoroxo: #591270;
+    --cor-fundoroxo: #6a377b;
     --cor-borda: #963288;
     --cor-linkapp-foco: #219fc2;
     --cor-borda-linkapp-foco: #bd9a0d;
