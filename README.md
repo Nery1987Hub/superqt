@@ -4,7 +4,7 @@ Nome do projeto:
 <strong></strong>
 <br><br><br>
 LOGO DO PROJETO
-<img width="1080" height="762" alt="4KFINAL_superQT-logomarca-completo" src="https://github.com/user-attachments/assets/6e71770d-a8ca-42a5-b9fc-bd387b01859c" />
+<img width="1608" height="1149" alt="LogomarcaSuperQT" src="https://github.com/user-attachments/assets/4ead3530-c595-43a1-af67-250b9ffae01e" />
 <!-- Objetivos -->
 O objetivo do projeto Quiz dos Super Titãs é a produção de um site que terá um quiz educativo, para <strong>ajudar as crianças e professores em suas aulas</strong>, afim de aprimorar o aprendizado dos alunos atravéz da <strong>gamificação</strong>, com o objetivo específico sendo a implementação dos requisitos levantados para o projeto, como a possibilidade de se fazer um <strong>login com senha</strong>, <strong>cadastro no site</strong>, <strong>o salavamento do progresso</strong> do estudante no quiz, dentre outros requisitos.
 
