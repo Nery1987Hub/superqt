@@ -5,8 +5,48 @@
     <title>Painel do Administrador</title>
     <link rel="stylesheet" href="css/padraoTelas.css">
     <link rel="stylesheet" href="css/footer-header.css">
+    <link rel="stylesheet" href="css/inicio.css">
 </head>
 <body>
+    <a href="#conteudo-principal" class="link-pular">Pular para conteúdo principal</a>
+
+    <header>
+        <div class="container logo-menu">
+            <div class="logo" role="img" arial-label="Logotipo da Empresa">
+                <a href="index.html">
+                    <img src="assets/images/logo-superqt.png" alt="Tela Inicial" width="50">
+                </a>
+            </div>
+            <nav aria-label="Navegação Principal">
+                <ul class="menu">
+                    <li class="dropdown-item">
+                        <button class="dropdown-botao" aria-haspopup="true" aria-expanded="false" id="btn-acessibilidade">
+                            Acessibilidade
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="btn-acessibilidade" role="menu">
+                            <li role="none">
+                                <button onclick="alternarTema()" onclick="" role="menuitem" class="btn-fonte" id="btn-tema">
+                                    Modo Escuro 🌙
+                                </button>
+                            </li>
+                            <!-- <li role="separator" style="border-top: 1px solid #ccc; margin: 5px 0;"></li>
+                            <li role="none">
+                                <button onclick="mudarFonte('diminuir')" role="menuitem" class="btn-fonte">-A</button>
+                            </li>
+                            <li role="none">
+                                <button onclick="mudarFonte('normal')" role="menuitem" class="btn-fonte">A</button>
+                            </li>
+                            <li role="none">
+                                <button onclick="mudarFonte('aumentar')" role="menuitem" class="btn-fonte">+A</button>
+                            </li>-->
+                        </ul>
+                    </li>
+                    <li>Contatos</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <h1>Painel de Controle - Administrador</h1>
     <h2>Lista de Alunos Cadastrados</h2>
     
@@ -14,15 +54,29 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Nome</th>
                 <th>CPF</th>
+                <th>Nome</th>
+                <th>Idade</th>
                 <th>Ações</th>
             </tr>
         </thead>
         <tbody id="tabelaAlunos">
             </tbody>
     </table>
-
+    <p class="centro-jogar">
+        <a class="jogar" href="index.html">Voltar ao Início</a>
+    </p>
     <script src="js/listarCadastro.js"></script>
+    <footer>
+        <div class="container">
+            <p>Termos e Privacidade</p>
+            <p>
+                <a href="https://play.google.com/store/games?hl=pt_BR&pli=1">Link para App Mobile</a>
+            </p>
+            <p>
+                A versão atual não reflete o resultado final do projeto. Todos os direitos reservados 💣
+            </p>
+        </div>
+    </footer>
 </body>
 </html>

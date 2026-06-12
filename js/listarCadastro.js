@@ -26,10 +26,17 @@ function carregarAlunos() {
             corpoTabela.innerHTML += `
                 <tr>
                     <td>${aluno.id}</td>
+                    <td>${aluno.cpfaluno}</td>
                     <td>${aluno.nome}</td>
-                    <td>${aluno.cpf}</td>
+                    <td>${aluno.idade}</td>
                     <td>
-                        <button onclick="deletarAluno(${aluno.id})">Excluir</button>
+                        <button class="btn-acao" onclick="prepararEdicao(${aluno.id})">
+                            <img src="assets/images/icon-editar.png" alt="Editar" height="30">
+                        </button>
+
+                        <button onclick="deletarAluno(${aluno.id})">
+                            <img src="assets/images/icon-excluir.png" alt="Excluir" height="30">
+                        </button>
                     </td>
                 </tr>
             `;
