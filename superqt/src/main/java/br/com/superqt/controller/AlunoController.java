@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.superqt.dto.AlunoDTO;
 import br.com.superqt.model.Aluno;
+import br.com.superqt.model.Perfil;
 import br.com.superqt.service.AlunoService;
 // import jakarta.validation.Valid;
 
@@ -33,6 +34,11 @@ public class AlunoController{
     @PostMapping
     public ResponseEntity<Aluno> criar(@RequestBody AlunoDTO dto){
         Aluno a = service.criar(dto);
+
+        if (a.getPerfil() == null){
+            a.setPerfil(Perfil.ALUNO);
+        }
+
         return ResponseEntity.created(URI.create("/aluno"+ a.getId())).body(a);
     }
 
