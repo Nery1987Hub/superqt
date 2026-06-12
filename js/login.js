@@ -22,20 +22,12 @@ document.getElementById('form-login').addEventListener('submit', function(event)
             throw new Error('Erro interno no servidor.');
         }
     })
-    .then(aluno => {
-        alert(`Bem-vindo, ${aluno.nome}!`);
-        // Aqui você pode salvar o usuário logado no localStorage se precisar:
-        // localStorage.setItem('usuarioLogado', JSON.stringify(aluno));
-        window.location.href = 'telaFases.html'; 
-    })
     .then(usuario => {
     alert(`Bem-vindo, ${usuario.nome}!`);
     
-    // Salva os dados na sessão do navegador para saber quem está logado
     localStorage.setItem('usuarioLogado', JSON.stringify(usuario));
-    
-    // REDIRECIONAMENTO DINÂMICO:
-    if (usuario.perfil === 'ADMIN'){
+
+    if (usuario.perfil === 'ADMIN') {
         window.location.href = 'telaListaCadastro.html'; 
     }else{
         window.location.href = 'telaFases.html';
