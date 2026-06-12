@@ -8,8 +8,6 @@ import br.com.superqt.dto.AlunoDTO;
 import br.com.superqt.model.Aluno;
 import br.com.superqt.repository.AlunoRepository;
 
-// senha  cpfaluno  idade
-
 @Service
 public class AlunoService {
     private final AlunoRepository repository;
@@ -20,7 +18,7 @@ public class AlunoService {
 
     public Aluno criar(AlunoDTO dto){
         System.out.println(dto.cpfaluno());
-        Aluno aluno = new Aluno(dto.senha(), dto.cpfaluno(), dto.idade());
+        Aluno aluno = new Aluno(dto.senha(), dto.cpfaluno(), dto.nome(), dto.idade(), dto.perfil());
         return repository.save(aluno);
     }
 
