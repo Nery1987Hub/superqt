@@ -1,6 +1,8 @@
 package br.com.superqt.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -19,6 +21,9 @@ public class Aluno{
     @NotBlank
     private String senha;
 
+    @NotBlank
+    private String nome;
+
     @NotNull
     @Min(0)
     private int idade;
@@ -26,11 +31,15 @@ public class Aluno{
     @NotBlank
     private String cpfaluno;
 
+    @Enumerated(EnumType.STRING)
+    private Perfil perfil;
+
     public Aluno (){}
 
-    public Aluno(String senha,  String cpfaluno, int idade){
+    public Aluno(String senha,  String cpfaluno, String nome, int idade, Perfil perfil){
         this.senha = senha;
         this.cpfaluno = cpfaluno;
+        this.nome = nome;
         this.idade = idade;
     }
 
@@ -60,5 +69,19 @@ public class Aluno{
     }
     public void setCPFaluno(String cpfaluno){
         this.cpfaluno = cpfaluno;
+    }
+
+    public String getNome(){
+        return nome;
+    }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public Perfil getPerfil() {
+        return perfil;
+    }
+    public void setPerfil(Perfil perfil) {
+        this.perfil = perfil;
     }
 }
