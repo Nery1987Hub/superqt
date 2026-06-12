@@ -64,10 +64,10 @@ public class Aluno{
         this.senha = senha;
     }
 
-    public String getCPFaluno(){
+    public String getCpfaluno(){
         return cpfaluno;
     }
-    public void setCPFaluno(String cpfaluno){
+    public void setCpfaluno(String cpfaluno){
         this.cpfaluno = cpfaluno;
     }
 

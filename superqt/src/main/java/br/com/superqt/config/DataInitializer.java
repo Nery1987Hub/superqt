@@ -17,7 +17,7 @@ public class DataInitializer{
             if (repository.findByCpfaluno("000.000.000-00").isEmpty()) {
                 Aluno admin = new Aluno();
                 admin.setNome("Admin do Sistema");
-                admin.setCPFaluno("000.000.000-00");
+                admin.setCpfaluno("000.000.000-00");
                 admin.setSenha("admin123"); // Em produção, aqui usaria criptografia
                 admin.setIdade(99);
                 admin.setPerfil(Perfil.ADMIN); // Define explicitamente como ADMIN
