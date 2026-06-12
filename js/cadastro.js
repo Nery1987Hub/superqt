@@ -57,7 +57,11 @@ async function cadastrarAluno(event){
 
     formCadastro.reset();
 
+    alert("Cadastro realizado com sucesso!");
+    window.location.href = "index.html";
   }catch (erro){
+    console.error(erro);
+    alert("Erro ao cadastrar: " + erro.message);
     // setStatus("Falha ao cadastrar aluno.", "error");
     // setSaida({ erro: erro.message, enviado: payload });
   }
