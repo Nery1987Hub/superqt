@@ -22,7 +22,7 @@ import br.com.superqt.service.AlunoService;
 
 @RestController
 @RequestMapping("/aluno")
-public class AlunoController {
+public class AlunoController{
 
     private final AlunoService service;
 
