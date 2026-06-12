@@ -2,12 +2,12 @@ const API_BASE = "http://localhost:8080/aluno";
  
 const formCadastro = document.getElementById("form-cadastro");
 
-async function request(path = "", options = {}) {
+async function request(path = "", options = {}){
   const headers = {
     ...(options.headers || {})
   };
  
-  if (options.body && !headers["Content-Type"] && !headers["content-type"]) {
+  if (options.body && !headers["Content-Type"] && !headers["content-type"]){
     headers["Content-Type"] = "application/json";
   }
  
@@ -21,13 +21,13 @@ async function request(path = "", options = {}) {
   let conteudo;
   const tipo = resposta.headers.get("content-type") || "";
  
-  if (tipo.includes("application/json")) {
+  if (tipo.includes("application/json")){
     conteudo = await resposta.json();
-  } else {
+  }else{
     conteudo = await resposta.text();
   }
  
-  if (!resposta.ok) {
+  if (!resposta.ok){
     const mensagem =
       (conteudo && conteudo.message) ||
       (typeof conteudo === "string" && conteudo) ||
@@ -38,17 +38,18 @@ async function request(path = "", options = {}) {
   return conteudo;
 }
  
-async function cadastrarAluno(event) {
+async function cadastrarAluno(event){
   event.preventDefault();
  
   const dados = new FormData(formCadastro);
   const payload = {
     senha: dados.get("senha"),
+    nome: dados.get("nome"),
     cpfaluno: dados.get("cpfaluno"),
     idade: dados.get("idade")
   };
  
-  try {
+  try{
     const alunoCriado = await request("", {
       method: "POST",
       body: JSON.stringify(payload)
@@ -56,12 +57,12 @@ async function cadastrarAluno(event) {
 
     formCadastro.reset();
 
-  } catch (erro) {
+  }catch (erro){
     // setStatus("Falha ao cadastrar aluno.", "error");
     // setSaida({ erro: erro.message, enviado: payload });
   }
 }
 
-if (formCadastro) {
+if (formCadastro){
   formCadastro.addEventListener("submit", cadastrarAluno);
 }
