@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.superqt.dto.LoginRequestDTO;
 import br.com.superqt.model.Aluno;
 import br.com.superqt.repository.AutenticacaoService;
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
+import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("/auth")
