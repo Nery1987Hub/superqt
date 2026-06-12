@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container-login">
-        <form>
+        <form id="form-login">
             <div class="input-group">
                 <label>CPF</label>
                 <input type="text" id="cpfaluno" name="cpfaluno" required placeholder="000.000.000-00">
@@ -19,12 +19,18 @@
                 <label>Senha</label>
                 <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
             </div>
+
+            <div>
+                Não possui conta?<br><a href="telaCadastro.html">Cadastre-se</a>
+            </div><br>
+
             <div class="button-group">
                 <button type="submit" class="btnLogin">
-                    <a href="telaFases.html">Entrar</a>
+                    <!--a href="telaFases.html"-->Entrar<!--/a-->
                 </button>
             </div>
         </form>
     </div>
+    <script src="js/login.js"></script>
 </body>
 </html>
