@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.superqt.dto.AlunoDTO;
 import br.com.superqt.model.Aluno;
-import br.com.superqt.model.Perfil;
 import br.com.superqt.service.AlunoService;
 // import jakarta.validation.Valid;
 
