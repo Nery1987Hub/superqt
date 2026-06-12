@@ -30,10 +30,6 @@ function carregarAlunos() {
                     <td>${aluno.nome}</td>
                     <td>${aluno.idade}</td>
                     <td>
-                        <button class="btn-acao" onclick="prepararEdicao(${aluno.id})">
-                            <img src="assets/images/icon-editar.png" alt="Editar" height="30">
-                        </button>
-
                         <button onclick="deletarAluno(${aluno.id})">
                             <img src="assets/images/icon-excluir.png" alt="Excluir" height="30">
                         </button>
