@@ -32,7 +32,7 @@ public class Aluno{
     private String cpfaluno;
 
     @Enumerated(EnumType.STRING)
-    private Perfil perfil;
+    private Perfil perfil = Perfil.ALUNO;
 
     public Aluno (){}
 

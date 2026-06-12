@@ -35,10 +35,6 @@ public class AlunoController{
     public ResponseEntity<Aluno> criar(@RequestBody AlunoDTO dto){
         Aluno a = service.criar(dto);
 
-        if (a.getPerfil() == null){
-            a.setPerfil(Perfil.ALUNO);
-        }
-
         return ResponseEntity.created(URI.create("/aluno"+ a.getId())).body(a);
     }
 
