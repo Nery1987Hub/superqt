@@ -1,0 +1,32 @@
+.dropAcessib-box {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 300px;
+    height: 300px;
+    
+    background-color: var(--cor-menu-suspenso);
+    color: #1c1d00;
+    padding: 35px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.btn-tema {
+    background: var(--cor-menu-suspenso);
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-family: MV Boli, sans-serif;
+    font-size: 17px;
+}
+
+.btn-tema:hover, .btn-tema:focus {
+    outline: 3px solid var(--cor-borda-linkapp-foco);
+}

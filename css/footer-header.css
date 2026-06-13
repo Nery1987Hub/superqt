@@ -18,9 +18,30 @@ body {
 header {
     border-bottom: 2px solid var(--cor-borda);
     padding: 15px 0;
-    font-family: arial;
     background-color: var(--cor-fundoroxo);
 }
+
+/* Configs Menu Suspenso */
+.header-btn {
+    background: var(--cor-fundoroxo);
+    color: var(--cor-fonte-menu-suspenso);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 23px;
+    font-family: MV Boli, sans-serif;
+}
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.hidden {
+    display: none;
+}
+/* Até aqui */
 
 main {
     flex: 1 0 auto;

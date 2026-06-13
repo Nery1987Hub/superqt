@@ -3,12 +3,18 @@
     --cor-texto: #1a1a1a;
     --cor-fundoroxo: #d559ff;
     --cor-borda: #ffaff4;
+
     --cor-linkapp-foco: #6cdfff;
     --cor-borda-linkapp-foco: #ffd427;
+
     --cor-focoJogar: #b138d9;
     --cor-gameOver: #ec3615;
     --cor-letra-botao: #ffdd44;
     --cor-letra-botaofoco: #fdc91d;
+
+    --cor-menu-suspenso: #fffaae;
+    --cor-fonte-menu-suspenso: #fffeec;
+
 }
 
 [data-theme = "dark"] {
@@ -16,11 +22,16 @@
     --cor-texto: #fbffc5;
     --cor-fundoroxo: #6a377b;
     --cor-borda: #963288;
+
     --cor-linkapp-foco: #219fc2;
     --cor-borda-linkapp-foco: #bd9a0d;
+
     --cor-focoJogar: #521052;
     --cor-gameOver: #cc1205;
     --cor-letra-botao: #ffb300;
+
+    --cor-menu-suspenso: #f5ee89;
+    --cor-fonte-menu-suspenso: #ffd650;
 }
 
 * {
